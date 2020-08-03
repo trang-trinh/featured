@@ -1,0 +1,126 @@
+* {padding: 0;margin: 0;outline: 0;}
+h1,h2,h3,h4,h5,h6,p{margin: 0;}
+img{width: 100%;}
+
+/*==========================
+    style start from here
+============================*/
+body{
+	background-color: #003665;
+}
+.e-commerce-product{
+	margin-top: 115px;
+}
+.product{
+	cursor: pointer;
+}
+.content{
+	position: relative;
+	overflow: hidden;
+}
+.content img{
+	width: 100%;
+	transition: .7s;
+}
+.content:hover img{
+	transform: scale(1.2);
+}
+.product-details{
+	background-color: #fbfbfb;
+	text-align: center;
+	padding: 17px 0;
+	transition: .3s;
+	overflow: hidden;
+}
+.title{
+	color: #959595;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-transform: capitalize;
+}
+.price{
+	width: 100%;
+	float: left;
+	color: #141414;
+	font-size: 17px;
+	margin-top: 9px;
+	line-height: 13px;
+	letter-spacing: 1px;
+}
+.price ins{
+	color: #242424;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.price del{
+	color: #959595;
+	font-size: 11px;
+	margin-left: 9px;
+}
+.product-btn{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform: translateY(100%);
+	transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.content:hover .product-btn{
+	transform: translateY(0);
+}
+.product-btn > a{
+	color: #fff;
+	float: left;
+	width: 100%;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 24px 20px 24px 20px;
+	transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.product-btn > a:hover{
+	color: #fff;
+}
+.product-btn > span{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 25%;
+	height: 100%;
+}
+.product-btn > span a{
+	background-color: #272727;
+	border-bottom: 1px solid #4a4a4a;
+	color: #e4e4e4;
+	float: left;
+	font-size: 14px;
+	height: 50%;
+	line-height: 40px;
+	text-align: center;
+	width: 100%;
+	transform: translateX(100%);
+	transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+.product-btn > span a:last-child{
+	border: 0 none;
+}
+.content:hover .product-btn span a{
+	transform: translateX(0);
+	transition-delay: .3s;
+}
+.content:hover .product-btn span a:last-child{
+	transition-delay: .5s;
+}
+.product-btn > a{
+	background-color: #292727;
+	opacity: 0.6;
+}

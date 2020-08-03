@@ -1,0 +1,20 @@
+{
+    "name": "magepow/featured",
+    "description": "A module featured",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [{
+        "name": "Magepow",
+        "email": "support@magepow.com",
+        "homepage": "http://magepow.com",
+        "role": "Technical Support"
+    }],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magepow\\Featured": ""
+        }
+    }
+}
